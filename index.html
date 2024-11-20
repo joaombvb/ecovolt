@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecovolt</title>
+    <link rel="icon" href="./assets/images/global/logo-icone.PNG" type="image/png">
+    <link rel="stylesheet" href="./assets/css/pages/index/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="./assets/images/global/logo-fundo-verde.jpg" alt="logo-fundo-verde">
+        </div>
+        <nav>
+            <ul class="header-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solucao.html">Solução</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul class="header-links">
+                <li><a href="contato.html" id="header-link-contato">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="section-1">
+            <video class="video-bg" autoplay muted loop>
+                <source src="https://cdn.pixabay.com/video/2023/03/28/156444-812591952_large.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            <div class="overlay"></div>
+            <div class="content">
+                <img src="./assets/images/global/logo-verde-sem-fundo.PNG" alt="logo-verde-claro-sem-fundo">
+            </div>
+        </section>
+        <section class="section-2">
+            <div>            
+                <h1>Bem-vindo à <strong>Ecovolt!</strong></h1>
+                <p>Democratizando o acesso à energia limpa e sustentável para transformar vidas.</p>
+            </div>
+            <div>
+                <a href="solucao.html">Saiba mais</a>
+            </div>  
+        </section>
+        <section class="section-3">
+            <div><h2>Conheça nosso time</h2></div>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img src="./assets/images/pages/index/perfil-joao.PNG" alt="Foto do Desenvolvedor 1" class="team-img">
+                    <h3>João Marcelo Vilas Boas</h3>
+                    <p class="descricao">Desenvolvedor</p>
+                    <ul class="card-links">
+                        <li>
+                            <a href="https://linkedin.com/in/joaombvb" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/joaombvb" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <img src="./assets/images/pages/index/perfil-rafael.PNG" alt="Foto do Desenvolvedor 2" class="team-img">
+                    <h3>Rafael Fernandes</h3>
+                    <p class="descricao">Desenvolvedor</p>
+                    <ul class="card-links">
+                        <li>
+                            <a href="https://linkedin.com/in/rafaelrofernandes/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/rafarfernandes" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div>
+                <img src="./assets/images/global/logo-verde-sem-fundo.PNG" alt="logo-verde-sem-fundo">
+                <p>Assista ao nosso vídeo e descubra como a Ecovolt está transformando o futuro da energia sustentável!</p>
+            </div>
+            <div>
+                <h2>Video Pitch</h2>
+                <div class="video-container">
+                    <iframe 
+                    src="https://www.youtube.com/embed/ID_DO_VIDEO" 
+                    title="Vídeo Pitch da Ecovolt" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <h2>Fale Conosco</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    <small class="error-message" id="name-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    <small class="error-message" id="email-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                    <small class="error-message" id="message-error"></small>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ecovolt - Energia Sustentável para Todos.</p>
+        <p>Email: contato@ecovolt.com | Telefone: (98) 9999-9999</p>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

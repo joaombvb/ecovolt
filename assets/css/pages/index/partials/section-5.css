@@ -1,0 +1,62 @@
+.section-5 {
+    padding: 7rem;
+    background-color: var(--verde);
+    text-align: center;
+    color: var(--branco-secundario);
+}
+
+.section-5 h2 {
+    font-size: 45px;
+    font-weight: 600;
+    padding: 0 0 1em;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--verde-claro);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.error-message {
+    color: red;
+    margin:0.5em;
+    font-size: 0.9rem;
+    display: none;
+}
+
+button {
+    background-color: var(--branco-secundario);
+    color: var(--verde);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: var(--branco);
+    transform: scale(1.03); /* Aumenta a escala para 105% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}

@@ -1,0 +1,13 @@
+:root {
+    /* Cores */
+    --preto: #000;
+    --branco: #fff;
+    --branco-translucido: rgba(255, 255, 255, 0.3);
+    --branco-secundario: #F4F9F4;
+    --verde-escuro: #5C8D89;
+    --verde: #74B49B;
+    --verde-claro: #A7D7C5;
+
+    /* Fontes */
+    --fonte-primaria:  'Montserrat', sans-serif;
+}

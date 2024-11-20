@@ -1,0 +1,81 @@
+.section-3 {
+    width: 100%;
+    height: auto;
+    background-color: var(--verde-escuro);
+    text-align: center;
+    padding: 7em;
+}
+
+.section-3 h2 {
+    color: var(--branco-secundario);
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 14em;
+}
+
+/* Estilos dos cards */
+.team-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    background-color: var(--branco-secundario);
+    border-radius: 30px;
+    padding: 2em;
+    width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+    transform: scale(1.03); /* Aumenta a escala para 105% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+.team-card img {
+    width: 250px;
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+.team-card h3 {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.team-card .descricao {
+    font-size: 20px;
+    color: var(--preto);
+    margin-bottom: 1em;
+}
+
+.card-links {
+    display: flex;
+    gap: 2em;
+}
+
+.card-links li a {
+    color: var(--verde-escuro);
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.card-links li a:hover {
+    color: var(--verde);
+}
+
+.card-links li a i {
+    transition: transform 0.5s ease;
+}
+
+.card-links li a i:hover {
+    transform: scale(1.2);
+}
