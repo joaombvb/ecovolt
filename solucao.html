@@ -36,29 +36,31 @@
             <img src="./assets/images/pages/solucao/energia-em-comunidade.webp">
         </section>
         <section class="section-2">
+          <div class="carousel-section">
             <h2>Como funciona?</h2>
             <div class="carousel-container">
-                <button class="carousel-button prev" onclick="moveCarousel(-1)">&#8249;</button>
-                <div class="carousel">
-                  <div class="card">
-                    <h3 class="card-titulo">Mapeamento Interativo</h3>
-                    <p class="card-descricao">Permite identificar regiões sem acesso adequado à energia.</p>
-                  </div>
-                  <div class="card">
-                    <h3 class="card-titulo">Simulação de Custos</h3>
-                    <p class="card-descricao">Calculadora online que estima os custos e benefícios de sistemas de energia renovável.</p>
-                  </div>
-                  <div class="card">
-                    <h3 class="card-titulo">Educação Energética</h3>
-                    <p class="card-descricao">Oferece tutoriais, cursos e materiais educativos sobre energia renovável.</p>
-                  </div>
-                  <div class="card">
-                    <h3 class="card-titulo">Conexão com Parceiros</h3>
-                    <p class="card-descricao">Facilita parcerias entre fornecedores de tecnologia e financiadores.</p>
-                  </div>
+              <button class="carousel-button prev" onclick="moveCarousel(0, -1)">&#8249;</button>
+              <div class="carousel" id="carousel-1">
+                <div class="card">
+                  <h3 class="card-titulo">Mapeamento Interativo</h3>
+                  <p class="card-descricao">Permite identificar regiões sem acesso adequado à energia.</p>
                 </div>
-                <button class="carousel-button next" onclick="moveCarousel(1)">&#8250;</button>
+                <div class="card">
+                  <h3 class="card-titulo">Simulação de Custos</h3>
+                  <p class="card-descricao">Calculadora online que estima os custos e benefícios de sistemas de energia renovável.</p>
+                </div>
+                <div class="card">
+                  <h3 class="card-titulo">Educação Energética</h3>
+                  <p class="card-descricao">Oferece tutoriais, cursos e materiais educativos sobre energia renovável.</p>
+                </div>
+                <div class="card">
+                  <h3 class="card-titulo">Conexão com Parceiros</h3>
+                  <p class="card-descricao">Facilita parcerias entre fornecedores de tecnologia e financiadores.</p>
+                </div>
               </div>
+              <button class="carousel-button next" onclick="moveCarousel(0, 1)">&#8250;</button>
+            </div>
+          </div>
         </section>
         <section class="section-3">
             <img src="./assets/images/pages/solucao/importancia.jpg">
