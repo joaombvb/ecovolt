@@ -1,0 +1,36 @@
+.section-1 {
+    background-color: var(--verde);
+    color: var(--branco-secundario);
+    padding: 10em 0;
+}
+
+.section-1 h1 {
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 4em;
+    justify-items: center;
+    margin: 0 15em;
+}
+
+.container-imagens img {
+    width: 100%; /* Ajusta o tamanho das imagens */
+    max-width: 300px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* (Opcional) Bordas arredondadas */
+    transition: transform ease 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-imagens img:hover {
+    transform: scale(1.2);
+
+}

@@ -1,0 +1,44 @@
+.section-2 {
+    background-color: var(--branco-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-2 img {
+    width: 1200px;
+    height: auto;
+    padding-top: 5em;
+}
+
+.section-2 p {
+    color: var(--verde-escuro);
+    font-size: 25px;
+    padding: 3em 13em 3em;
+}
+.section-2 p b {
+    font-weight: 600;
+}
+
+.section-2 p strong{
+    font-weight: 600;
+}
+
+.section-2 a {
+    background-color: var(--verde);
+    padding: 1em 1.5em;
+    color: var(--branco-secundario);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 14px;
+    margin-bottom: 5em;
+    transition: transform ease 0.3s;
+}
+
+.section-2 a:hover {
+    transform: scale(1.1);
+    background-color: var(--verde-claro);
+}
