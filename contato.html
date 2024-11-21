@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecovolt</title>
+    <title>Ecovolt - Contato</title>
     <link rel="icon" href="./assets/images/global/logo-icone.PNG" type="image/png">
     <link rel="stylesheet" href="./assets/css/pages/contato/contato.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,9 +27,71 @@
             </ul>
         </div>
     </header>
+    <main>
+        <section class="section-1">
+            <h1>Entre em contato</h1>
+            <div>
+                <div class="div-form">
+                    <form id="form-contato" action="#" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto:</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="anexo">Anexar Arquivo:</label>
+                            <input type="file" id="anexo" name="anexo" accept=".jpg,.png,.pdf,.doc,.docx">
+                        </div>
+                        <button type="submit" id="enviar">Enviar</button>
+                    </form>
+                </div>
+                <div class="infos">
+                    <img src="./assets/images/global/logo-verde-sem-fundo.PNG">
+                    <p class="descricao">Estamos aqui para ajudar. Preencha o formulário ao lado ou entre em contato pelos canais disponíveis.</p>
+                    <div class="infos-contato">
+                        <div class="infos-contato-group">
+                            <i class="fas fa-envelope"></i>
+                            <p>contato@ecovolt.com</p>
+                        </div>
+                        <div class="infos-contato-group">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>(98) 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="infos-redes">
+                        <h3>Nos acompanhe nas redes sociais:</h3>
+                        <div class="redes-icones">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <footer>
         <p>© 2024 Ecovolt - Energia Sustentável para Todos.</p>
         <p>Email: contato@ecovolt.com | Telefone: (98) 9999-9999</p>
     </footer>
+    <script src="./assets/js/contato.js"></script>
 </body>
 </html>

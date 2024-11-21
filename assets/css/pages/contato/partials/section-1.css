@@ -1,0 +1,138 @@
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 12em;
+    background-color: var(--branco-secundario);
+}
+
+.section-1 h1 {
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 60px;
+    font-weight: 600;
+    padding: 0 0 1em;
+}
+
+.section-1 div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#form-contato {
+    background-color: var(--verde-claro);
+    margin:2em 5em;
+    padding: 4em;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--verde-escuro);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--verde-claro);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--branco-secundario);
+    color: var(--verde);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: var(--branco);
+    transform: scale(1.03); /* Aumenta a escala para 105% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 3em 0 4em;
+}
+
+.infos img {
+    width: 800px;
+    height: auto; 
+}
+
+.infos .descricao {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    text-align: center;
+    padding: 0 4em;
+}
+
+.infos-contato {
+    width: 50%;
+    display: flex;
+}
+
+.infos-contato-group {
+    gap: 1em;
+}
+
+.infos-contato-group i, .infos-contato-group p {
+    color:var(--verde);
+    font-size: 20px;
+}
+
+.infos-redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos-redes h3 {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.redes-icones {
+    padding: 0 3em;
+}
+
+.redes-icones i {
+    color: var(--verde-escuro);
+    font-size: 40px;
+    transition: transform ease 0.3s;
+}
+
+.redes-icones i:hover {
+    transform: scale(1.3);
+}
+
+
