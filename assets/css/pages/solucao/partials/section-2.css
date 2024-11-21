@@ -1,0 +1,71 @@
+.section-2 {
+    height: 600px;
+    background-color: var(--verde);
+    text-align: center;
+}
+
+.section-2 h2 {
+    color: var(--branco-secundario);
+    font-size: 60px;
+    font-weight: 600;
+    padding: 1em 0 2em;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+  
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 400%;
+}
+  
+.card {
+    flex: 1 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card-titulo {
+    color: var(--branco);
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.card-descricao {
+    color: var(--branco-secundario);
+    font-size: 25px;
+    font-weight: 400;
+}
+  
+.carousel-button {
+    background-color: transparent;
+    color: var(--branco-secundario);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 100px;
+}
+  
+.carousel-button.prev {
+    left: 200px;
+}
+  
+.carousel-button.next {
+    right: 200px;
+}
