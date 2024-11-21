@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecovolt</title>
     <link rel="icon" href="./assets/images/global/logo-icone.PNG" type="image/png">
+      <!-- Link para o Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
     <link rel="stylesheet" href="./assets/css/pages/recursos/recursos.css">
 </head>
 <body>
@@ -26,9 +30,111 @@
             </ul>
         </div>
     </header>
+    <main>
+        <section class="section-1">
+            <h1>Explore nossos Recursos Educacionais e Ferramentas Interativas</h1>
+            <h2>A <b>Ecovolt</b> oferece uma variedade de recursos para ajudá-lo a entender e implementar soluções de energia renovável. Descubra como transformar o futuro energético conosco.</h2>
+        </section>
+        <section class="section-2">
+            <div id="tutoriais-cursos">
+                <h2>Tutoriais em Vídeo</h2>
+                <p class="titulo-descricao">Confira tutoriais sobre energia renovável, economia e implementação de soluções sustentáveis.</p>
+              
+                <div class="video-grid">
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/O9a3dDt9G7I" frameborder="0" allowfullscreen></iframe>
+                        <h3>Transformando o Brasil</h3>
+                        <p>O impacto econômico dos investimentos em energia renovável.</p>
+                      </div>
+                    <div class="video-card">
+                      <iframe src="https://www.youtube.com/embed/LeNFetsNAK0" title="10 Dicas Para Começar a Trabalhar com Energia Solar" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <h3>10 Dicas Para Começar a Trabalhar com Energia Solar</h3>
+                      <p>Dicas essenciais para iniciantes que desejam começar a trabalhar com energia solar.</p>
+                    </div>
+                    <div class="video-card">
+                      <iframe src="https://www.youtube.com/embed/ImGOv3FKZfw" title="Aprenda Energia Fotovoltaica Solar em 7 minutos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <h3>Aprenda Energia Fotovoltaica Solar em 7 minutos</h3>
+                      <p>Uma introdução rápida ao conceito e funcionamento da energia fotovoltaica.</p>
+                    </div>
+                    <div class="video-card">
+                      <iframe src="https://www.youtube.com/embed/elxYh85GHac" title="Aprenda a Instalar Sistema Solar na Prática" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <h3>Aprenda a Instalar Sistema Solar na Prática</h3>
+                      <p>Passo a passo para a instalação de sistemas solares fotovoltaicos.</p>
+                    </div>
+                    <div class="video-card">
+                      <iframe src="https://www.youtube.com/embed/wbQEvEv6ZWk" title="Como Funciona a Energia Solar e Sua Instalação" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <h3>Como Funciona a Energia Solar e Sua Instalação</h3>
+                      <p>Entenda como a energia solar funciona e os principais passos para sua instalação.</p>
+                    </div>
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/hTkAztglhnU" frameborder="0" allowfullscreen></iframe>
+                        <h3>Entenda como Funciona Energia Solar</h3>
+                        <p>Uma explicação simples e prática sobre energia solar.</p>
+                      </div>
+                </div>
+                <!-- Botão Ver Mais -->
+                <div class="ver-mais">
+                  <a href="https://www.youtube.com/results?search_query=energia+renov%C3%A1vel" target="_blank">Ver Mais</a>
+                </div>
+              </div>              
+        </section>
+        <section class="section-3">
+            <div id="simulador-custos">
+                <h2>Simulador de Custos</h2>
+                <p>Calcule o custo e os benefícios de instalar um sistema de energia solar para sua residência ou empresa.</p>
+                
+                <form id="simulador-form">
+                  <div class="input-group">
+                    <label for="tipo-inst">Tipo de Instalação</label>
+                    <select id="tipo-inst">
+                      <option value="residencial">Residencial</option>
+                      <option value="comercial">Comercial</option>
+                    </select>
+                  </div>
+                  
+                  <div class="input-group">
+                    <label for="consumo">Consumo Médio Mensal (kWh)</label>
+                    <input type="number" id="consumo" required>
+                  </div>
+                  
+                  <div class="input-group">
+                    <label for="preco-energia">Preço da Energia (R$/kWh)</label>
+                    <input type="number" id="preco-energia" required>
+                  </div>
+                  
+                  <div class="input-group">
+                    <label for="custo-sistema">Custo do Sistema Solar (R$)</label>
+                    <input type="number" id="custo-sistema" required>
+                  </div>
+                  
+                  <button type="submit">Calcular</button>
+                </form>
+              
+                <div id="resultados" class="resultado">
+                  <h2>Resultados:</h2>
+                  <p><strong>Economia Anual:</strong> <span id="economia-anual">R$ 0</span></p>
+                  <p><strong>Tempo de Retorno:</strong> <span id="tempo-retorno">0</span> anos</p>
+                  <p><strong>Impacto Ambiental:</strong> <span id="impacto-ambiental">0 kg de CO2</span></p>
+                </div>
+            </div>  
+        </section>
+        <section class="section-4">
+            <div class="mapa-section">
+                <h2>Mapeamento Interativo</h2>
+                <p>Explore as regiões com maior demanda por soluções energéticas.</p>
+                
+                <!-- Botão para carregar o mapa -->
+                <button id="buscar-localizacao">Buscar Localização</button>
+
+                <!-- Mapa -->
+                <div id="map" class="mapa"></div>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>© 2024 Ecovolt - Energia Sustentável para Todos.</p>
         <p>Email: contato@ecovolt.com | Telefone: (98) 9999-9999</p>
     </footer>
+    <script src="./assets/js/recursos.js"></script>
 </body>
 </html>

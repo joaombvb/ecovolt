@@ -1,0 +1,23 @@
+.section-1 {
+    padding-top: 12em;
+    background-color: var(--branco-secundario);
+    text-align: center;
+}
+
+.section-1 h1 {
+    color: var(--verde-escuro);
+    font-size: 50px;
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+.section-1 h2 {
+    color: var(--verde);
+    font-size: 25px;
+    padding: 0 10em 6em;
+}
+
+.section-1 h2 b {
+    font-weight: 600;
+    font-size: 30px;
+}

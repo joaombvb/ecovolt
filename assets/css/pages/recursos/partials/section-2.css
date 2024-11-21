@@ -1,0 +1,73 @@
+#tutoriais-cursos {
+    text-align: center;
+    padding: 20px 60px;
+    background-color: var(--verde);
+  }
+  
+  #tutoriais-cursos h2 {
+    color: var(--branco-secundario);
+    font-size: 50px;
+    font-weight: 600;
+    margin: 1em;
+  }
+
+  .titulo-descricao {
+    color: var(--branco-secundario);
+    font-size: 25px;
+    margin-bottom: 2em;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 3em;
+  }
+  
+  .video-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-card iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  .video-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--verde);
+    margin-top: 1em;
+  }
+  
+  .video-card p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: var(--verde-escuro);
+  }
+  
+  .ver-mais {
+    margin-top: 20px;
+  }
+  
+  .ver-mais a {
+    display: inline-block;
+    padding: 1em 1.5em;
+    margin: 1em 0;
+    background: var(--branco-secundario);
+    color: var(--verde-escuro);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .ver-mais a:hover {
+    background: var(--verde-claro);
+  }
+  

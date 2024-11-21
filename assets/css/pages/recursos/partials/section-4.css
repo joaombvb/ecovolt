@@ -1,0 +1,50 @@
+.section-4 {
+    background-color: var(--verde-claro);
+}
+
+.mapa-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mapa-section h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    padding: 1em 0;    
+}
+
+.mapa-section p {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    padding: 0 0 1em;
+}
+  
+.mapa-section button {
+    background-color: var(--verde);
+    color: var(--branco-secundario);
+    border: none;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+  
+.mapa-section button:hover {
+    background-color: var(--verde-escuro);
+}
+  
+.mapa {
+    height: 500px;
+    width: 100%;
+    margin: 5em 0;
+    border: 5px solid var(--verde-escuro);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
